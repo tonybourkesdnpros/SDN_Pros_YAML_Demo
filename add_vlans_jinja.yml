@@ -1,0 +1,11 @@
+---
+- name: Create configs for VLAN database from YAML
+  hosts: leafs
+  vars_files:
+    - vlans.yml
+  tasks:
+    - name: Build VLAN config
+      ansible.builtin.template:
+        src: vlans.j2
+        dest: configs/{{ inventory_hostname }}.cfg
+        mode: '0644'

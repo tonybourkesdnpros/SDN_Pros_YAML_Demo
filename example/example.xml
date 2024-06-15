@@ -1,0 +1,31 @@
+<water>wet</water>
+<fire>host</fire>
+<sky>blue</sky>
+<planets>Mercury</planets>
+<planets>Venus</planets>
+<planets>Earth</planets>
+<planets>Mars</planets>
+<planets>Jupiter</planets>
+<planets>Saturn</planets>
+<planets>Uranus</planets>
+<planets>Neptune</planets>
+<vlan_list>
+  <id>10</id>
+  <name>DMZ</name>
+</vlan_list>
+<vlan_list>
+  <id>20</id>
+  <name>Internal</name>
+</vlan_list>
+<vlan_list>
+  <id>30</id>
+  <name>Sales</name>
+</vlan_list>
+<vlan_list>
+  <id>40</id>
+  <name>QA</name>
+</vlan_list>
+<vlan_list>
+  <id>50</id>
+  <name>Guest</name>
+</vlan_list>

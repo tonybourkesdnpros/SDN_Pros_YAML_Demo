@@ -1,0 +1,13 @@
+---
+- name: Delete VLANs from YAML
+  hosts: leafs
+  vars_files:
+    - vlans.yml
+  tasks:
+    - name: Delete VLANs from VLAN
+      arista.eos.eos_vlans:
+        config:
+          - vlan_id: "{{ item.id }}"
+            name: "{{ item.name }}"
+        state: deleted
+      loop: "{{ vlans_list }}"
